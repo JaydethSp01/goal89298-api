@@ -1,0 +1,24 @@
+from pydantic import BaseModel
+class Producto(BaseModel):
+    id: int
+    nombre: str
+    categoria: str
+    precio: float
+class Categoria(BaseModel):
+    id: int
+    nombre: str
+class Talla(BaseModel):
+    id: int
+    nombre: str
+class Proveedor(BaseModel):
+    id: int
+    nombre: str
+class Stock(BaseModel):
+    id: int
+    producto: str
+    talla: str
+    cantidad: int
+class Alerta(BaseModel):
+    id: int
+    producto: str
+    mensaje: str
