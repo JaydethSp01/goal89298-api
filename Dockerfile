@@ -1,0 +1,1 @@
+FROM python:3.12-slim\nCOPY requirements.txt .\nRUN pip install -r requirements.txt\nCOPY . .\nCMD ["sh","-c","uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
