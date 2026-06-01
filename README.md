@@ -1,2 +1,1 @@
-# goal89298-api
-ScrumDev AI backend (goal89298-api)
+# Inventory System Backend\nThis project is built using FastAPI and serves as the backend for the inventory management system.
